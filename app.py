@@ -1,3 +1,6 @@
+@app.route("/", methods=["GET"]
+           def home():
+               return "ICELILIS bot activo"
 from flask import Flask, request
 import openai
 from twilio.twiml.messaging_response import MessagingResponse
@@ -30,6 +33,6 @@ def whatsapp_reply():
     resp = MessagingResponse()
     resp.message(reply_text)
     return str(resp)
-
-if __name__=="__main__":
-app.run(host="0.0.0.0",port=int(os.environ.get("PORT",5000)))
+    
+    if __name__ == "__main__":
+        app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
