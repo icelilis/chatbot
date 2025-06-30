@@ -32,4 +32,4 @@ def whatsapp_reply():
     return str(resp)
 
 if __name__ == "_main_":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
