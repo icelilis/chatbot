@@ -1,6 +1,3 @@
-@app.route("/", methods=["GET"]
-           def home():
-               return "ICELILIS bot activo"
 from flask import Flask, request
 import openai
 from twilio.twiml.messaging_response import MessagingResponse
