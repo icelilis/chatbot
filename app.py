@@ -3,7 +3,7 @@ import openai
 from twilio.twiml.messaging_response import MessagingResponse
 import os
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -31,5 +31,5 @@ def whatsapp_reply():
     resp.message(reply_text)
     return str(resp)
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     app.run(debug=True)
