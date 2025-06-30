@@ -16,7 +16,7 @@ No uses lenguaje robótico. Sé natural y paciente.
 
 @app.route("/", methods=["GET"])
 def home():
-return "ICELILIS bot activo"
+    return "ICELILIS bot activo"
 
 @app.route("/whatsapp", methods=["POST"])
 def whatsapp_reply():
